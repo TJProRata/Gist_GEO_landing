@@ -1,0 +1,10 @@
+[
+  {
+    "session_id": "135e6512-0473-4585-a102-d98183f63637",
+    "transcript_path": "/Users/tjmcgovern/.claude/projects/-Users-tjmcgovern-geo-gist-landing/135e6512-0473-4585-a102-d98183f63637.jsonl",
+    "cwd": "/Users/tjmcgovern/geo-gist-landing/.claude/commands",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "Stop",
+    "stop_hook_active": false
+  }
+]

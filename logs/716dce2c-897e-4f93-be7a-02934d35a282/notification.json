@@ -1,0 +1,23 @@
+[
+  {
+    "session_id": "716dce2c-897e-4f93-be7a-02934d35a282",
+    "transcript_path": "/Users/tjmcgovern/.claude/projects/-Users-tjmcgovern-geo-gist-landing/716dce2c-897e-4f93-be7a-02934d35a282.jsonl",
+    "cwd": "/Users/tjmcgovern/geo-gist-landing",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input"
+  },
+  {
+    "session_id": "716dce2c-897e-4f93-be7a-02934d35a282",
+    "transcript_path": "/Users/tjmcgovern/.claude/projects/-Users-tjmcgovern-geo-gist-landing/716dce2c-897e-4f93-be7a-02934d35a282.jsonl",
+    "cwd": "/Users/tjmcgovern/geo-gist-landing",
+    "hook_event_name": "Notification",
+    "message": "Claude Code needs your attention"
+  },
+  {
+    "session_id": "716dce2c-897e-4f93-be7a-02934d35a282",
+    "transcript_path": "/Users/tjmcgovern/.claude/projects/-Users-tjmcgovern-geo-gist-landing/716dce2c-897e-4f93-be7a-02934d35a282.jsonl",
+    "cwd": "/Users/tjmcgovern/geo-gist-landing",
+    "hook_event_name": "Notification",
+    "message": "Claude Code needs your approval for the plan"
+  }
+]

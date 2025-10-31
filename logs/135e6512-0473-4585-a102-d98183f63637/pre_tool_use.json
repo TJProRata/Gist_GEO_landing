@@ -1,0 +1,59 @@
+[
+  {
+    "session_id": "135e6512-0473-4585-a102-d98183f63637",
+    "transcript_path": "/Users/tjmcgovern/.claude/projects/-Users-tjmcgovern-geo-gist-landing/135e6512-0473-4585-a102-d98183f63637.jsonl",
+    "cwd": "/Users/tjmcgovern/geo-gist-landing",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/tjmcgovern/geo-gist-landing/README.md"
+    }
+  },
+  {
+    "session_id": "135e6512-0473-4585-a102-d98183f63637",
+    "transcript_path": "/Users/tjmcgovern/.claude/projects/-Users-tjmcgovern-geo-gist-landing/135e6512-0473-4585-a102-d98183f63637.jsonl",
+    "cwd": "/Users/tjmcgovern/geo-gist-landing",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git ls-files",
+      "description": "List all git-tracked files in project"
+    }
+  },
+  {
+    "session_id": "135e6512-0473-4585-a102-d98183f63637",
+    "transcript_path": "/Users/tjmcgovern/.claude/projects/-Users-tjmcgovern-geo-gist-landing/135e6512-0473-4585-a102-d98183f63637.jsonl",
+    "cwd": "/Users/tjmcgovern/geo-gist-landing",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Glob",
+    "tool_input": {
+      "pattern": "**/*"
+    }
+  },
+  {
+    "session_id": "135e6512-0473-4585-a102-d98183f63637",
+    "transcript_path": "/Users/tjmcgovern/.claude/projects/-Users-tjmcgovern-geo-gist-landing/135e6512-0473-4585-a102-d98183f63637.jsonl",
+    "cwd": "/Users/tjmcgovern/geo-gist-landing",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Glob",
+    "tool_input": {
+      "pattern": ".claude/commands/*.md"
+    }
+  },
+  {
+    "session_id": "135e6512-0473-4585-a102-d98183f63637",
+    "transcript_path": "/Users/tjmcgovern/.claude/projects/-Users-tjmcgovern-geo-gist-landing/135e6512-0473-4585-a102-d98183f63637.jsonl",
+    "cwd": "/Users/tjmcgovern/geo-gist-landing",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cd /Users/tjmcgovern/geo-gist-landing/.claude/commands && for file in *.md; do mv \"$file\" \"geo_$file\"; done && ls -1",
+      "description": "Rename all command files with geo prefix"
+    }
+  }
+]

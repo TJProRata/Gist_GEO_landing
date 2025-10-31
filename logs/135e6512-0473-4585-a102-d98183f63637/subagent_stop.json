@@ -1,0 +1,18 @@
+[
+  {
+    "session_id": "135e6512-0473-4585-a102-d98183f63637",
+    "transcript_path": "/Users/tjmcgovern/.claude/projects/-Users-tjmcgovern-geo-gist-landing/135e6512-0473-4585-a102-d98183f63637.jsonl",
+    "cwd": "/Users/tjmcgovern/geo-gist-landing",
+    "permission_mode": "default",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false
+  },
+  {
+    "session_id": "135e6512-0473-4585-a102-d98183f63637",
+    "transcript_path": "/Users/tjmcgovern/.claude/projects/-Users-tjmcgovern-geo-gist-landing/135e6512-0473-4585-a102-d98183f63637.jsonl",
+    "cwd": "/Users/tjmcgovern/geo-gist-landing",
+    "permission_mode": "default",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false
+  }
+]
