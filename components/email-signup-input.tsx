@@ -1,12 +1,12 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import { cva, type VariantProps } from "class-variance-authority";
-import { LockKeyhole } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const emailInputVariants = cva(
-  "flex items-center gap-2 overflow-hidden rounded-[10px] bg-transparent px-3 py-3 shadow-[0px_4px_16px_rgba(0,0,0,0.15)] transition-all",
+  "flex items-center gap-2 overflow-hidden rounded-[10px] bg-transparent pl-5 pr-3 py-2.5 md:py-3 shadow-[0px_4px_16px_rgba(0,0,0,0.15)] transition-all",
   {
     variants: {
       responsive: {
@@ -45,17 +45,22 @@ const EmailSignupInput = React.forwardRef<
         type="email"
         placeholder="Your Email"
         className={cn(
-          "flex-1 bg-transparent text-[16px] text-[#FFF5DC] placeholder:text-[#FFF5DC] focus-visible:outline-none md:text-[16px]",
-          "text-[14px]"
+          "flex-1 bg-transparent text-[14px] text-[#FFF5DC] placeholder:text-[#FFF5DC] tracking-[0.01em] focus-visible:outline-none md:text-[16px]"
         )}
         {...props}
       />
       <button
         type="submit"
-        className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
+        className="flex h-8 w-8 p-1 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
         aria-label="Submit email"
       >
-        <LockKeyhole className="h-4 w-4 text-white" strokeWidth={1.5} />
+        <Image
+          src="/svg/bell.svg"
+          alt=""
+          width={16}
+          height={16}
+          className="text-white"
+        />
       </button>
     </form>
   );

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { EmailSignupInput } from "@/components/email-signup-input";
 
 export default function Home() {
@@ -12,7 +13,17 @@ export default function Home() {
   };
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-gradient-to-b from-[#8072FA] to-[#A678D1] px-4 pb-4 pt-[200px] backdrop-blur-[50px] md:px-20 md:py-20">
+    <main className="relative min-h-screen overflow-hidden px-4 pb-4 pt-[200px] md:px-20 md:py-20">
+      {/* Background Image */}
+      <div className="fixed inset-0 -z-10">
+        <Image
+          src="/background.png"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
       {/* Main content container */}
       <div className="flex min-h-[calc(100vh-216px)] flex-col items-center justify-between md:min-h-[calc(100vh-160px)] md:justify-center">
         {/* Content sections */}
