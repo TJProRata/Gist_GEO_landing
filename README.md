@@ -17,11 +17,15 @@ As a user, I want to visit gistgeo.ai on mobile/desktop and sign up for launch n
 
 ## Features
 
-- [ ] Responsive design (mobile + desktop)
-- [ ] Email signup form
+- [x] Responsive design (mobile + desktop)
+- [x] Email signup form
+- [x] Convex backend integration
 - [ ] Notification preferences
-- [ ] Convex backend integration
 - [ ] Clerk OAuth integration
+
+## Deployment
+
+See **[DEPLOY.md](./DEPLOY.md)** for complete deployment instructions to Vercel.
 
 ## Setup
 
@@ -29,12 +33,24 @@ As a user, I want to visit gistgeo.ai on mobile/desktop and sign up for launch n
 # Install dependencies
 bun install
 
-# Configure environment
-cp .env.example .env.local
-# Add CONVEX_DEPLOYMENT and CLERK keys
+# Initialize Convex backend
+bunx convex dev
+# This will:
+# - Prompt you to log in (or create account)
+# - Create a new Convex project
+# - Generate .env.local with NEXT_PUBLIC_CONVEX_URL
+# - Start the Convex dev server
 
-# Run development server
+# Run development server (in separate terminal)
 bun run dev
+```
+
+### Environment Variables
+
+After running `bunx convex dev`, your `.env.local` will be automatically created with:
+
+```bash
+NEXT_PUBLIC_CONVEX_URL=https://your-deployment.convex.cloud
 ```
 
 ## Project Structure

@@ -1,22 +1,29 @@
 "use client";
 
 import Image from "next/image";
+import { useMutation } from "convex/react";
+import { api } from "@/convex/_generated/api";
 import { EmailSignupInput } from "@/components/email-signup-input";
 
 export default function Home() {
+  const createSignup = useMutation(api.signups.createSignup);
+
   const handleSubmit = async (email: string) => {
-    console.log("Email submitted:", email);
-    // TODO: Connect to Convex backend
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 500));
+    try {
+      await createSignup({ email });
+    } catch (error) {
+      throw new Error(
+        error instanceof Error ? error.message : "Failed to save email"
+      );
+    }
   };
 
   const handleSuccess = () => {
-    console.log("Subscription successful!");
+    console.log("Subscription successful! Email saved to Convex.");
   };
 
   const handleError = (error: string) => {
-    console.error("Subscription error:", error);
+    console.error("Convex error:", error);
   };
 
   return (
