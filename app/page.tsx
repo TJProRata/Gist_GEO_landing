@@ -1,15 +1,22 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import { EmailSignupInput } from "@/components/email-signup-input";
 
 export default function Home() {
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = () => {
+  const handleSubmit = async (email: string) => {
     console.log("Email submitted:", email);
     // TODO: Connect to Convex backend
+    // Simulate API call
+    await new Promise((resolve) => setTimeout(resolve, 500));
+  };
+
+  const handleSuccess = () => {
+    console.log("Subscription successful!");
+  };
+
+  const handleError = (error: string) => {
+    console.error("Subscription error:", error);
   };
 
   return (
@@ -64,9 +71,9 @@ export default function Home() {
               Get notified when we launch.
             </div>
             <EmailSignupInput
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
               onSubmit={handleSubmit}
+              onSuccess={handleSuccess}
+              onError={handleError}
               responsive="mobile"
               className="md:w-[470px]"
             />
