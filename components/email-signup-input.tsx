@@ -82,7 +82,7 @@ const inputVariants = cva(
 export interface EmailSignupInputProps
   extends Omit<
       React.InputHTMLAttributes<HTMLInputElement>,
-      "size" | "onSubmit" | "onChange"
+      "size" | "onSubmit" | "onChange" | "onError"
     >,
     VariantProps<typeof containerVariants> {
   /** Callback for form submission (async for API integration) */
