@@ -69,11 +69,38 @@
 
 @layer utilities {
   .geo-gradient-text {
-    background: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #FFC3D0 100%);
+    background: radial-gradient(162.76% 50% at 50% 50%, #FEF9E1 0%, #FFC3D0 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent;
+    letter-spacing: -3.36px;
+  }
+
+  .gradient-border-left-fade {
+    position: relative;
+    border: none;
+  }
+
+  .gradient-border-left-fade::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: 10px;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
   }
 }
 

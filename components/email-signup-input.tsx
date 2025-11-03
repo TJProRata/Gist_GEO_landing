@@ -16,7 +16,7 @@ type EmailInputState = "default" | "submitted" | "success" | "error";
 // ============================================================================
 
 const containerVariants = cva(
-  "flex items-center gap-2 overflow-hidden rounded-[10px] pl-5 pr-3 py-2.5 md:py-3 transition-all",
+  "flex items-center gap-2 overflow-hidden rounded-[10px] gradient-border-left-fade pl-5 pr-3 py-2.5 md:py-3 transition-all",
   {
     variants: {
       responsive: {

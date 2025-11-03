@@ -34,3 +34,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# logs and sensitive files
+logs/
+docs/slack-setup.md
+convex/slack.ts
+convex/crons.ts
+convex/exports.ts
+convex/exportQueries.ts
+specs/
