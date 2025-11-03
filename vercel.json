@@ -2,11 +2,5 @@
   "buildCommand": "bun run build",
   "installCommand": "bun install",
   "framework": "nextjs",
-  "regions": ["iad1"],
-  "crons": [
-    {
-      "path": "/api/cron/health-check",
-      "schedule": "*/5 * * * *"
-    }
-  ]
+  "regions": ["iad1"]
 }
