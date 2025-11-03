@@ -67,3 +67,13 @@
   }
 }
 
+@layer utilities {
+  .geo-gradient-text {
+    background: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #FFC3D0 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+}
+

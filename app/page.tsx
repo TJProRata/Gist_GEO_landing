@@ -59,7 +59,7 @@ export default function Home() {
                   <h1 className="text-[48px] font-bold leading-[56.64px] md:text-[84px] md:leading-[99.12px]">
                     <span className="text-white/60">Gist</span>
                     <span className="text-[#FEFFCE]"> </span>
-                    <span className="text-[rgba(254,255,205,0.60)]">GEO</span>
+                    <span className="geo-gradient-text">GEO</span>
                   </h1>
                 </div>
               </div>
@@ -73,7 +73,7 @@ export default function Home() {
           </div>
 
           {/* Signup section */}
-          <div className="flex flex-col items-center gap-[14px] md:gap-5">
+          <div className="flex flex-col items-center gap-[14px] md:gap-5 mx-4">
             <div className="text-[14px] font-medium tracking-[0.14px] text-white md:text-[20px] md:tracking-[0.20px]">
               Get notified when we launch.
             </div>
